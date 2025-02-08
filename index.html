@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" id="html-root">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Elegant Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Dancing+Script:wght@600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HEADER / NAV -->
+  <header class="header">
+    <nav class="navbar">
+      <!-- Brand / Logo -->
+      <div class="brand-logo" data-i18n="nav.brand">My Portfolio</div>
+
+      <!-- Hamburger Menu Button -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+        &#9776; <!-- or an icon -->
+      </button>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" data-i18n="nav.home">Home</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+
+      <!-- Language Toggle -->
+      <select id="language-select" class="language-select">
+        <option value="en">English</option>
+        <option value="ar">العربية</option>
+      </select>
+
+      <!-- Theme Toggle -->
+      <button id="theme-toggle-btn" class="theme-toggle-btn">
+        <span data-i18n="nav.darkMode">Dark Mode</span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title" data-i18n="hero.title">
+        Hello, I'm Meshall
+      </h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">
+        A passionate programmer & designer who crafts elegant solutions with code.
+      </p>
+      <button class="hero-button" onclick="scrollToSection('#about')" data-i18n="hero.button">
+        Discover More
+      </button>
+    </div>
+    <!-- Optional wave shape divider (uncomment if you have wave-shape.svg):
+    <img src="assets/images/wave-shape.svg" alt="wave shape" class="wave-divider" />
+    -->
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about section">
+    <div class="section-heading">
+      <h2 data-i18n="about.title">About Me</h2>
+      <hr />
+    </div>
+    <div class="section-content">
+      <p data-i18n="about.text">
+        I’m a dedicated developer with a passion for both the artistic and
+        technical sides of programming. I love creating visually stunning
+        experiences that blend smooth user interfaces with well-structured code.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="projects section">
+    <div class="section-heading">
+      <h2 data-i18n="projects.title">Projects</h2>
+      <hr />
+    </div>
+    <div class="project-cards">
+      <!-- Project Card 1 -->
+      <div class="project-card">
+        <h3 data-i18n="projects.items.0.title">Artful Web App</h3>
+        <p data-i18n="projects.items.0.description">
+          A web app that showcases dynamic paintings generated with JavaScript
+          and canvas. It harnesses 2D rendering to produce unique designs every time.
+        </p>
+        <a href="#" target="_blank" data-i18n="projects.items.0.link">
+          View on GitHub
+        </a>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="project-card">
+        <h3 data-i18n="projects.items.1.title">Portfolio Site</h3>
+        <p data-i18n="projects.items.1.description">
+          A modern portfolio theme built with React and CSS animations for a
+          fluid user experience.
+        </p>
+        <a href="#" target="_blank" data-i18n="projects.items.1.link">
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="skills section">
+    <div class="section-heading">
+      <h2 data-i18n="skills.title">Skills</h2>
+      <hr />
+    </div>
+    <div class="skills-list">
+      <div class="skill" data-i18n="skills.items.0">HTML/CSS</div>
+      <div class="skill" data-i18n="skills.items.1">JavaScript</div>
+      <div class="skill" data-i18n="skills.items.2">React.js</div>
+      <div class="skill" data-i18n="skills.items.3">Node.js</div>
+      <div class="skill" data-i18n="skills.items.4">Responsive Design</div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact section">
+    <div class="section-heading">
+      <h2 data-i18n="contact.title">Contact</h2>
+      <hr />
+    </div>
+    <div class="contact-content">
+      <p data-i18n="contact.subtitle">
+        Interested in working together or just want to say hello?
+      </p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:lycansre@gmail.com">lycansre@gmail.com</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div>
+      &copy; 2025 <span data-i18n="footer.name">Your Name</span> | 
+      <span data-i18n="footer.crafted">Crafted with</span> 
+      <span style="color: #e25555;">&#9829;</span> 
+      <span data-i18n="footer.andCode">and Code</span>
+    </div>
+  </footer>
+
+  <!-- Link to external JS file -->
+  <script src="script.js"></script>
+</body>
+</html>
